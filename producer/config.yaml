@@ -1,0 +1,19 @@
+kafka:
+  bootstrap_servers: "localhost:9092"
+  topic: "sensor-readings"
+  acks: "all"
+
+simulation:
+  device_count: 20
+  interval_seconds_min: 1
+  interval_seconds_max: 5
+  anomaly_rate: 0.03
+  duplicate_rate: 0.01
+  regions:
+    - us-east-1
+    - eu-west-1
+    - ap-south-1
+  device_types:
+    - temperature_humidity
+    - gps
+    - industrial_multi
